@@ -20,6 +20,7 @@ class Book implements JsonSerializable {
     function __construct() {
         $this -> id = -1;
         $this -> author = '';
+        $this -> name = '';
         $this -> description ='';
     }
     
@@ -109,11 +110,12 @@ class Book implements JsonSerializable {
             
             try {
                 $query = $conn -> prepare($sql);
-                $query -> execute($sqlParams);
-                $this -> setId($conn -> lastInserId());
-                return $this; 
+                $result = $query -> execute($sqlParams);
+                $this -> setId($conn -> lastInsertId());
+                return $result; 
             } catch (Exception $ex) {
                 echo $ex ->getMessage();
+                return false;
             }  
         }
     }
