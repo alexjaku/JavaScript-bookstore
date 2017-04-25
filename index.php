@@ -7,10 +7,7 @@
     <title> Alex' Xięgarnia </title>
     <link href="css/style.css" rel="stylesheet">
     
-    <script src="jquery-3.1.1.js"></script>
-    
-    <script src="xiegarnia.js"></script>
-    
+        
   </head>
   <body>
     
@@ -45,6 +42,10 @@
         </div>
         
     </div>
+  
+      
+        <script src="jquery-3.1.1.js"></script>
     
+        <script src="xiegarnia.js"></script>
   </body>
 </html>

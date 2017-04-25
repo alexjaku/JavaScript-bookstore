@@ -30,7 +30,7 @@ $(function () {
                 
         $.ajax({url: "api/books.php", dataType:"json", type: "GET"})
                 .done(function(response) {
-                    response.(function(book) {
+                    response(function(book) {
                         var li = $('<li class="row"> </li>');
                     li.append('<div class="oneBook">' + book.name);
                     li.append('<input type="button" value="Info" id="infoBtn">'+
