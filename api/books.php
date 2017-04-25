@@ -3,7 +3,7 @@
 require_once 'src/DBconfig.php';
 require_once 'src/Book.php';
 
- // showing books or 
+ // showing books or one book
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $arr = [];
     if(isset($_GET['id']) && !empty($_GET['id'])) {

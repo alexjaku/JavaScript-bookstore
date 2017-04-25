@@ -14,7 +14,7 @@
   
     <div class="formBox"> 
         <h3> Witaj w swojej E-Xięgarni! </h3>
-        <form action="" method="POST"> 
+        <form action="" method="POST">
             <fieldset> 
                 <div class="form">
                     <div>
